@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Crypto Tracker Portfolio</string>
+    <string name="loading_message">0.00</string>
+    <string name="title_activity_add_account">Addres e Re</string>
+    <string name="coin_prompt">Zgjedhni llojin e Monedhës</string>
+    <string name="total_balance">Vlera Totale e Portfolios</string>
+    <string name="add_button">Addres e Re</string>
+    <string name="enterCoinSymbol">Shëno simbolin e Monedhës</string>
+    <string name="coinicon">coinIcon</string>
+    <string name="miota">ERROR</string>
+    <string name="delete">Fshij monedhën</string>
+    <string name="plus">+</string>
+    <string name="refresh">Rifresko</string>
+    <string name="dollarsign">$</string>
+    <string name="change24hr">Ndryshimi 24hr</string>
+    <string name="infobutton">i</string>
+    <string name="newCoin">Monedhë e re</string>
+    <string name="help">Ndihmo</string>
+    <string name="enter_currency">Jepni Kodin e Monedhës</string>
+    <string name="Vlera_totale">Vlera totale</string>
+</resources>

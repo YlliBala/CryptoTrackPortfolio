@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:baselineAligned="false">
+
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="37dp"
+        android:src="@drawable/error"
+        android:id="@+id/coinIcon"
+        android:contentDescription="@string/coinicon"
+        android:paddingTop="3dp" />
+
+    <TextView
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:text="@string/miota"
+        android:gravity="bottom|center_horizontal"
+        android:id="@+id/coinName"
+        android:textColor="@color/text_primary"
+        android:textSize="14dp"
+        android:paddingTop="2dp"
+        android:layout_below="@+id/coinIcon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_message"
+        android:id="@+id/coinValue"
+        android:gravity="center_vertical|right"
+        android:textSize="20sp"
+        android:textColor="@color/text_primary"
+        android:layout_toStartOf="@+id/coinPrice"
+        android:layout_toEndOf="@+id/coinIcon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_message"
+        android:id="@+id/coinBalance"
+        android:gravity="center_vertical|bottom|right"
+        android:textSize="17sp"
+        android:textColor="@color/text_primary"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/coinValue"
+        android:layout_alignBottom="@+id/coinName"
+        android:layout_toStartOf="@+id/coinPrice"
+        android:layout_toEndOf="@+id/coinIcon" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_message"
+        android:id="@+id/coinPrice"
+        android:gravity="center_vertical|right"
+        android:textSize="20sp"
+        android:textColor="@color/text_primary"
+        android:layout_alignEnd="@+id/percentChange" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_message"
+        android:id="@+id/percentChange"
+        android:gravity="bottom|right"
+        android:textSize="17sp"
+        android:textColor="@color/text_primary"
+        android:paddingBottom="3dp"
+        android:layout_alignBottom="@+id/coinBalance"
+        android:layout_below="@+id/coinValue"
+        android:layout_toStartOf="@+id/changeArrow" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/changeArrow"
+        android:src="@drawable/arrow_green"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/coinPrice"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="3dp" />
+
+</RelativeLayout>
